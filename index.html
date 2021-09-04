@@ -1,16 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RGB Projek
-    </title>
+    <title>RGB Projek</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="container">
+        <div class="form">
+            <input type="text" name="input-user" placeholder="Masukkan kode warna" class="user-input" maxlength="18"
+                minlength="1">
+            <button class="btn btn-copy" name="btn-copy">Copy Warna</button>
+            <div class="btn-wrapper">
+                <button class="btn user-color" name="user-color">Ganti Warna!</button>
+                <button class="btn random-color">Acak Warna!</button>
+            </div>
+        </div>
 
+        <!-- slider -->
+        <div class="slider-wrapper">
+            <div class="kotak kotak-merah"></div>
+            <input type="range" class="slider merah" id="red-range" max="255">
+
+            <div class="kotak kotak-hijau"></div>
+            <input type="range" class="slider hijau" id="green-range" max="255">
+
+            <div class="kotak kotak-biru"></div>
+            <input type="range" class="slider biru" id="blue-range" max="255">
+        </div>
+    </div>
+
+    <!-- My JS -->
+    <script src="script.js"></script>
 </body>
 
 </html>
